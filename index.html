@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Number Game</title>
+    <title>2D Catch Game</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #fff;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <h1>Guess the Number Game</h1>
-    <p>Guess a number between 1 and 100:</p>
-    <input type="text" id="userGuess">
-    <button onclick="checkGuess()">Guess</button>
-    <p id="message"></p>
+    <h1>2D Catch Game</h1>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
 
     <script src="game.js"></script>
 </body>
